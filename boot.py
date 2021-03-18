@@ -5,7 +5,7 @@ import time
 pycom.heartbeat(False)
 wlan = WLAN(mode=WLAN.STA)
 
-wlan.connect(ssid='telenet-9819F7E', auth=(WLAN.WPA2, 'x3cjkkmjrfhF'))
+wlan.connect(ssid='IoT', auth=(WLAN.WPA2, 'KdGIoT92!'))
 while not wlan.isconnected():
     machine.idle()
     print("wifi not connected")
